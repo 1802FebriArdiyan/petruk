@@ -1,0 +1,15 @@
+include <iostream>
+using namespace std;
+
+class person{
+	public:
+		string nama;
+		int npm;
+		char kelas;
+};
+int main(){
+	person orang1;
+	cin >> orang1.nama >> orang1.npm >> orang1.kelas;
+	cout << orang1.nama << orang1.npm << orang1.kelas;
+	
+}
