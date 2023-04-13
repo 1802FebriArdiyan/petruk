@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+
+// fungsi void tanpa return
+// fungsi return value menggunakan return
+
+//#1
+int tambah(int x, int y){
+	return x + y;
+}
+
+int main(){
+	int x = 5;
+	int y = 2;
+	int hasil;
+	
+	hasil = tambah(x, y);
+	
+	cout << "Hasil penjumlahan dari " << x << " + " << y << " adalah: " << hasil << endl;
+	
+	}
+
+//#2
+double luas_lingkaran(double r, double phi){
+	return phi * r * r;
+}
+
+int main(){
+	double r = 5;
+	double phi = 3.14;
+	double hasil = 0;
+	
+	hasil = luas_lingkaran(r, phi);
+	
+	cout << "Luas lingkarannya adalah: " << hasil;
+	
+	return 0;
+	}
+	
+	
+//#3
+void absen(string name, int npm){
+	cout << name << "_" << npm;
+}
+
+int main(){
+	string name;
+	int npm;
+	
+	getline(cin, name);
+	cin >> npm;
+	cout << endl;
+	
+	absen(name, npm);
+}
+
+//#4
+void luas_persegiPanjang(int p, int l){
+	cout << p * l;
+}
+int main(){
+	int p;
+	int l;
+	
+	cin >> p;
+	cin >> l;
+	
+	luas_persegiPanjang(p, l);
+	
+}
