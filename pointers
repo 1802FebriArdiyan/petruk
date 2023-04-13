@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+//pointer
+int kuadrat(int val) {
+	return val * val;
+}
+
+void kuadrat2(int *val){
+	*val = (*val) * (*val);
+}
+
+int main(){
+	int val = 5;             
+	val = kuadrat(val);      
+	cout << val << endl; 
+	
+	int b = 5;
+	kuadrat2(&b);
+	cout << b << endl;
+}
+
+//pointer tukarnilai
+void tukar(int *a, int *b){
+	
+	int tmp = *a;  //5 
+	*a = *b;       //7
+	*b = tmp; 
+	
+	
+}
+int main(){
+	int a = 5;
+	int b = 7;
+	
+	cout << a << endl;
+	cout << b << endl;
+	
+	tukar(&a, &b);
+	
+	cout << a << endl;
+	cout << b << endl;
+	
+}
